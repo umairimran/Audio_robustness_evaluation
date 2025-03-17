@@ -49,9 +49,9 @@ To evaluate foundation models, run ``main_fm.py``. For example, to evaluate robu
 
 ```
 python main_fm.py --eval \
-									--model hubert \
-									--eval_ckpt $PATH_TO_MODEL_CHECKPOINT$ \
-									--pert_method gaussian_noise \ 
+--model hubert \
+--eval_ckpt $PATH_TO_MODEL_CHECKPOINT$ \
+--pert_method gaussian_noise \ 
 ```
 
 
@@ -60,6 +60,6 @@ To evaluate traditional deep learning detectors, run main_tm.py
 
 ```
 python main_tm.py --eval \
-									--config ./config/AASIST.conf \
-									--pert_method gaussian_noise
+--config ./config/AASIST.conf \
+--pert_method gaussian_noise
 ```
